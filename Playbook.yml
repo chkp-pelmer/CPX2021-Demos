@@ -7,7 +7,8 @@
       add_host:
         hostname: "{{ lookup('env','VAR_mgmt_hostname') }}"
         ansible_host: "{{ lookup('env','VAR_mgmt_IP') }}"
-        # Credentials for cp_mgmt* modules and Settings for the Check Point httpapi test plugin that provides methods to connect to Checkpoint devices over a HTTP(S)-based api.
+        # Credentials for cp_mgmt* modules and Settings for the Check Point httpapi plugin that provides methods to connect to Checkpoint devices over a HTTP(S)-based api.
+        # new comment 12-march
         ansible_httpapi_use_ssl: True
         ansible_httpapi_validate_certs: False
         ansible_network_os: check_point.mgmt.checkpoint
